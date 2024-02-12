@@ -1,0 +1,31 @@
+#ifndef SEV_SEGMENT_H_
+#define SEV_SEGMENT_H_
+/*
+	Function Name        : SEV_SEGMENT_vInit
+	Function Returns     : void
+	Function Arguments   : unsigned char portname
+	Function Description : Set the direction of the given port 1 = output
+*/
+void SEV_SEGMENT_vInit(unsigned char portname);
+/*
+	Function Name        : SEV_SEGMENT_vWrite
+	Function Returns     : void
+	Function Arguments   : unsigned char portname, unsigned char number
+	Function Description : write the given value to port to be showed in 7 segment screen
+*/
+void SEV_SEGMENT_vWrite(unsigned char portname, unsigned char number);
+/*
+	Function Name        : SEV_SEGMENT_MUX_vInit
+	Function Returns     : void
+	Function Arguments   : unsigned char portname, unsigned char mux_port, unsigned char no_of_enable_bits
+	Function Description : Set the direction of the given ports 1 = output and enable bits to 1 = output
+*/
+void SEV_SEGMENT_vInitBCD(unsigned char portname);
+/*
+	Function Name        : SEV_SEGMENT_vWriteBCD
+	Function Returns     : void
+	Function Arguments   : unsigned char portname, unsigned char number, unsigned char *type
+	Function Description : write the given value to port to be showed in 7 segment screen
+*/
+void SEV_SEGMENT_vWriteBCD(unsigned char portname, unsigned char number);
+#endif
