@@ -5,6 +5,6 @@ Hardware Tools:</br>
 2- LCD Character 16 x 2</br>
 3- 3 * Push Button</br>
 4- Keypad</br>
-5- 256Hz Crystal</br>
+5- 32.768KHz Crystal</br>
 6- 2 * 18pF Capacitors</br>
 7- 8 * 14-Segment</br>
